@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./css/cascade.css">
+</head>
+<body>
+
+    <div class="big-container">
+
+        <h2>Expense Tracker</h2>
+    
+        <div class="container">
+    
+            <h4>Your Balance</h4>
+            <h1 id="balance"><span>&#x20B9;</span><span class="rate">0.00</span></h1>
+    
+            <div class="small-container">
+                <div>
+                    <h4>Income</h4>
+                    <p id="money-plus" class="money plus">&#8377;<span class="rate">0.00</span></p>
+                </div>
+                <div>
+                    <h4>Expense</h4>
+                    <p id="money-minus" class="money minus">&#8377;<span class="rate">0.00</span></p>
+                </div>
+            </div>
+    
+            <h3 class="history">History</h3>
+            <ul class="list" id="list">
+                
+            </ul>
+    
+            <h3>Add new transaction</h3>
+            <form id="form">
+                <div class="form-control">
+                    <label for="text">Text</label>
+                    <input type="text" id="text" placeholder="Enter text...." autocomplete="off">
+                </div>
+    
+                <div class="form-control">
+                    <label for="amount">Amount <br> (negative-expense, positive - income)</label>
+                    <input type="number" id="amount" placeholder="Enter amount...">
+                </div>
+    
+                <button class="btn">Add transaction</button>
+            </form>
+            
+        </div>
+
+    </div>
+    
+    <script src="./js/javaScript.js"></script>
+</body>
+</html>
