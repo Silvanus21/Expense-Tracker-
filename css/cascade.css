@@ -90,11 +90,11 @@ h4 {
 }
 
 .money.plus {
-  color: #2ecc71;
+  color: rgb(119, 119, 119);
 }
 
 .money.minus {
-  color: #c0392b;
+  color: rgb(119, 119, 119);
 }
 
 label {
@@ -190,6 +190,18 @@ input:focus,
   display: none;
 }
 
+/* swal... */
+
+.swal2-toast {
+  box-shadow: none !important;
+  background-color: #f4f4f4 !important;
+  border: 1px solid #444 !important;
+  padding: 15px !important;
+}
+.swal2-title {
+  color: #333 !important;
+}
+
 /* media queries.. */
 
 @media screen and (max-width: 500px) {
@@ -198,6 +210,13 @@ input:focus,
   }
   .container {
     width: 350px;
+  }
+
+  .swal2-toast {
+    background-color: #333 !important;
+  }
+  .swal2-title {
+    color: aliceblue !important;
   }
 }
 
