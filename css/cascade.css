@@ -72,10 +72,12 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .small-container div {
   flex: 1;
+  padding: 0 7px;
   text-align: center;
 }
 
@@ -120,13 +122,12 @@ input:focus,
 }
 
 .btn {
-  /* box-shadow: var(--box-shadow); */
   display: block;
   color: #9c88ff;
   border: 1px #9c88ff solid;
   font-size: 15px;
   padding: 9px;
-  margin: 10px 0 25px;
+  margin: 17px 0 25px;
   width: 100%;
   transition: opacity transform;
   transition-duration: 0.3s;
@@ -137,6 +138,10 @@ input:focus,
   background-color: #9c88ff;
   cursor: pointer;
   color: #fff;
+}
+
+.btn:active {
+  background-color: #7462ce;
 }
 
 .list {
@@ -227,5 +232,43 @@ input:focus,
 
   .container {
     width: 85%;
+  }
+
+  h1 span {
+    font-size: 1.5rem;
+  }
+
+  .money {
+    font-size: 15px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  li span {
+    font-size: 12px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    display: block;
+    padding: 7px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .swal2-toast {
+    padding: 10px !important;
+    font-size: 13px !important;
   }
 }
